@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .feild{
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+           
+            background-color: rgb(138, 207, 34);
+        }
+        .feild:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: transform 0.2s;
+
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(179, 6, 6);
+            border-radius: 50%;
+           position: relative;
+           left: 515px;
+           transition: transform 2s ease-out .3s;
+         
+        }
+        .feild:hover .ball{
+            transform: translate(900px, -200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="feild">
+        <img class="bat" src="images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
